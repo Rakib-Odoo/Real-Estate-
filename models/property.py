@@ -4,6 +4,7 @@ from odoo import fields, models, api
 class Property(models.Model):
     _name = 'real_estate.property'
     _description = 'Property Details'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
 
     name = fields.Char(string='Property Name', required=True)
     state = fields.Selection([

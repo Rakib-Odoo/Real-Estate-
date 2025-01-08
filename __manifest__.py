@@ -5,7 +5,7 @@
     'author': 'Rakib Hasan',
     'category': 'Sales',
     'sequence': 1,
-    'depends': [],
+    'depends': ['mail'],
     'data': [
         # security files
         'security/ir.model.access.csv',
