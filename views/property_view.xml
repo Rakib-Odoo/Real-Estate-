@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!--Form View-->
+    <record id="property_form_view" model="ir.ui.view">
+        <field name="name">real_estate.property.form</field>
+        <field name="model">real_estate.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="bedroom"/>
+                            <field name="date_available"/>
+                            <field name="expected_price"/>
+                            <field name="best_offer"/>
+                            <field name="selling_price"/>
+                            <field name="postcode"/>
+                        </group>
+                        <group>
+                            <field name="living_area"/>
+                            <field name="bathroom"/>
+                            <field name="garage"/>
+                            <field name="garden"/>
+                            <field name="garden_area"/>
+                            <field name="gardem_orientation"/>
+                            <field name="description"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!--Tree View-->
+    <record id="property_tree_view" model="ir.ui.view">
+        <field name="name">real_estate.property.tree</field>
+        <field name="model">real_estate.property</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="bedroom"/>
+                <field name="date_available"/>
+                <field name="expected_price"/>
+                <field name="best_offer"/>
+                <field name="selling_price"/>
+                <field name="postcode"/>
+                <field name="living_area"/>
+                <field name="bathroom"/>
+                <field name="garage"/>
+                <field name="garden"/>
+                <field name="garden_area"/>
+                <field name="gardem_orientation"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--action view-->
+    <record id="action_property" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="res_model">real_estate.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create New Property
+            </p>
+            <p>
+                You can create property here!.
+            </p>
+        </field>
+    </record>
+
+
+</odoo>

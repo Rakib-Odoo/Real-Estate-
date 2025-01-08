@@ -9,6 +9,13 @@
     'data': [
         # security files
         'security/ir.model.access.csv',
+
+
+        #views tables
+        'views/property_view.xml',
+
+        # views file
+        'views/meun_items.xml',
     ],
     'license': 'LGPL-3',
     'installable': True,
